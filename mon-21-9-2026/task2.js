@@ -198,4 +198,376 @@ console.log(food);
       //exercise 14 fuction
 
     
-      
+  function uppandlow(x){
+    let r="";
+    for(let char of x){
+         if(char==char.toUpperCase()){
+             r += char.toLowerCase();
+
+         }
+         else{
+             r += char.toUpperCase();
+
+         }
+    }
+
+    return r
+  }
+
+
+
+  console.log(uppandlow("OrAnG"));
+
+
+
+
+function camelCase(x) {
+    let r = "";
+    let capitalize = true;
+
+    for (let char of x) {
+        if (char == " ") {
+            capitalize = true;
+        } 
+        else if (capitalize) {
+            r += char.toUpperCase();
+            capitalize = false;
+        } 
+        else {
+            r += char;
+        }
+    }
+
+    return r;
+}
+
+console.log(camelCase("Coding Academy by Orange"));
+
+
+
+
+
+
+function removeElement(arr, element) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == element) {
+            arr.splice(i, 1);
+        }
+    }
+
+    return arr;
+}
+
+console.log(removeElement(
+    ["Coding", "Academy", "By", "Orange"],
+    "By"
+));
+
+
+
+
+
+
+function oddoreven(o){
+   if(o%2==0){
+      console.log("the num is even")
+   }
+   else{
+             console.log("the num is even")
+
+   }
+}
+
+
+function check(q){
+   if(isNaN(q) == false){
+      console.log("this is number")
+   }
+   else{
+      console.log("this is not number")
+   }
+}
+
+check(4);
+
+function largest(a, b) {
+
+    if (a > b) {
+        console.log(a);
+    }
+    else {
+        console.log(b);
+    }
+
+}
+
+largest(10, 5);
+
+
+
+function triangle(a, b, c) {
+
+    if (a == b && b == c) {
+        console.log("Equilateral");
+    }
+    else if (a == b || a == c || b == c) {
+        console.log("Isosceles");
+    }
+    else {
+        console.log("Scalene");
+    }
+
+}
+
+triangle(5, 5, 5);
+
+
+
+function checkRange(number) {
+
+    if (number >= 10 && number <= 20) {
+        console.log("Number is in the range");
+    }
+    else {
+        console.log("Number is not in the range");
+    }
+
+}
+
+checkRange(15);
+
+
+
+function leapYear(year) {
+
+    if (year % 4 == 0) {
+        console.log("Leap Year");
+    }
+    else {
+        console.log("Not a Leap Year");
+    }
+
+}
+
+leapYear(2024);
+
+
+
+for (let i = 1; i <= 50; i++) {
+
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+
+}
+
+
+
+let i = 1;
+
+while (i <= 50) {
+
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+
+    i++;
+}
+
+
+
+for (let i = 2; i <= 50; i += 2) {
+
+    console.log(i);
+
+}
+
+
+
+for (let i = 1; i <= 50; i++) {
+
+    if (i % 2 == 0) {
+        console.log("Even:", i);
+    }
+
+}
+
+
+
+
+for (let i = 1; i <= 50; i++) {
+
+    if (i % 2 != 0) {
+        console.log("Odd:", i);
+    }
+
+}
+
+
+
+for (let i = 1; i <= 100; i++) {
+
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
+    }
+    else if (i % 3 == 0) {
+        console.log("Fizz");
+    }
+    else if (i % 5 == 0) {
+        console.log("Buzz");
+    }
+    else {
+        console.log(i);
+    }
+
+}
+
+
+function fizzBuzz(number) {
+
+    if (number % 3 == 0 && number % 5 == 0) {
+        console.log("FizzBuzz");
+    }
+    else if (number % 3 == 0) {
+        console.log("Fizz");
+    }
+    else if (number % 5 == 0) {
+        console.log("Buzz");
+    }
+    else {
+        console.log(number);
+    }
+
+}
+
+
+
+function fizzBuzz(number) {
+
+    if (number > 100) {
+        return;
+    }
+
+    if (number % 3 == 0 && number % 5 == 0) {
+        console.log("FizzBuzz");
+    }
+    else if (number % 3 == 0) {
+        console.log("Fizz");
+    }
+    else if (number % 5 == 0) {
+        console.log("Buzz");
+    }
+    else {
+        console.log(number);
+    }
+
+    fizzBuzz(number + 1);
+}
+
+fizzBuzz(1);
+
+
+function banknotes(number, notes) {
+
+    for (let i = 0; i < notes.length; i++) {
+
+        while (number >= notes[i]) {
+
+            console.log(notes[i]);
+
+            number = number - notes[i];
+        }
+    }
+}
+
+banknotes(57, [25, 10, 5, 1]);
+
+
+
+function countCharacter(text, character) {
+
+    let count = 0;
+
+    for (let i = 0; i < text.length; i++) {
+
+        if (text[i].toLowerCase() == character.toLowerCase()) {
+            count++;
+        }
+
+    }
+
+    console.log(count);
+}
+
+countCharacter("Coding Academy by Orange", "o");
+
+
+
+
+for (let i = 3; i <= 29; i++) {
+
+    if (i % 2 != 0) {
+        console.log(i);
+    }
+
+}
+
+
+
+for (let i = 12; i >= -14; i--) {
+
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+
+}
+
+
+
+for (let i = 50; i >= 20; i--) {
+
+    if (i % 3 == 0) {
+        console.log(i);
+    }
+
+}
+
+
+
+
+let textt = "CodingAcademy";
+
+let arr = [7, 500, "KH404", "black", 36];
+
+for (let i = 0; i < arr.length; i++) {
+
+    console.log(arr[i]);
+
+}
+
+
+
+let numbers = [7, 23, 18, 9, -13, 38, -10, 12, 0, 124];
+
+let evens = [];
+let odds = [];
+
+for (let i = 0; i < numbers.length; i++) {
+
+    if (numbers[i] % 2 == 0) {
+        evens.push(numbers[i]);
+    }
+    else {
+        odds.push(numbers[i]);
+    }
+
+}
+
+console.log("Evens:", evens);
+console.log("Odds:", odds);
+
+
+
+
+
+
