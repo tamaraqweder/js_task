@@ -97,3 +97,4 @@ for (let color of colors) {
 let students = ["Adam", "Sara", "Lina"];
 
 console.log(Array.isArray(students));
+

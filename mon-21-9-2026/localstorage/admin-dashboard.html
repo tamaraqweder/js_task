@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Admin Dashboard</h1>
+
+        <p class="subtitle">
+            All Registered Users
+        </p>
+
+        <!-- Users Table -->
+        <div class="users-table">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+
+                <tbody id="users-table-body">
+                    <!-- JavaScript will add users here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Logout -->
+        <button id="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
